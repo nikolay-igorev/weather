@@ -13,8 +13,8 @@ class WeatherRequestTestCase(TestCase):
 
         WeatherRequest.objects.create(city='New York')
 
-        self.london_count = WeatherRequest.objects.filter(city='London').count()
         self.krasnoyarsk_count = WeatherRequest.objects.filter(city='Krasnoyarsk').count()
+        self.london_count = WeatherRequest.objects.filter(city='London').count()
         self.new_york_count = WeatherRequest.objects.filter(city='New York').count()
 
     def test_weather_request_count(self):

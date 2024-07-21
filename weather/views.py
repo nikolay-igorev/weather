@@ -60,7 +60,7 @@ def index(request):
     """View получения погода"""
     city = ''
     context = {}
-    form = ''
+
     if request.method == 'POST':
         form = WeatherForm(request.POST)
         city = form.data['city']

@@ -9,15 +9,15 @@
 
 #### Вывод погоды на ближайший час:
 
-![img.png](img.png)
+![img.png](media/images/img.png)
 
 #### Введён неверный город:
 
-![img_1.png](img_1.png)
+![img_1.png](media/images/img_1.png)
 
 #### API, показывающее сколько раз вводили город:
 
-![img_2.png](img_2.png)
+![img_2.png](media/images/img_2.png)
 
 ### Установка с помощью Docker
 
