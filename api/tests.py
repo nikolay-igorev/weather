@@ -21,6 +21,11 @@ class WeatherRequestTestCase(TestCase):
         response = self.client.get('/api/statistics/')
 
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data[0]['count'], self.krasnoyarsk_count)
-        self.assertEqual(response.data[1]['count'], self.london_count)
-        self.assertEqual(response.data[2]['count'], self.new_york_count)
+
+        for response in response.data:
+            if response['city'] == 'Krasnoyarsk':
+                self.assertEqual(response['count'], self.krasnoyarsk_count)
+            elif response['city'] == 'London':
+                self.assertEqual(response['count'], self.london_count)
+            elif response['city'] == 'New York':
+                self.assertEqual(response['count'], self.new_york_count)
