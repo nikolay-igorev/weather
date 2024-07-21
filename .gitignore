@@ -13,7 +13,6 @@ local_settings.py
 
 .DS_Store
 *.sqlite3
-media/
 env/
 *.pyc
 *.db
